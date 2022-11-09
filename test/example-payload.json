@@ -1,0 +1,117 @@
+{
+  "eventType": "project_snapshot/v0",
+  "project": {
+    "id": "567891234",
+    "name": "example-name/repo:pom.xml",
+    "created": "2019-06-24T12:16:57.877Z",
+    "origin": "github",
+    "type": "maven",
+    "readOnly": false,
+    "testFrequency": "daily",
+    "totalDependencies": 60,
+    "issueCountsBySeverity": {
+      "low": 1,
+      "high": 49,
+      "medium": 16,
+      "critical": 0
+    },
+    "imageTag": "0.0.0-RELEASE",
+    "imagePlatform": "",
+    "lastTestedDate": "2022-03-01T17:01:07.751Z",
+    "browseUrl": "https://app.snyk.io/org/example-name/project/12345",
+    "importingUser": null,
+    "owner": null,
+    "tags": [],
+    "isMonitored": true,
+    "attributes": {
+      "criticality": [],
+      "lifecycle": [],
+      "environment": []
+    },
+    "branch": "master"
+  },
+  "org": {
+    "id": "374682734657234",
+    "name": "example-org",
+    "slug": "example-slug",
+    "url": "https://app.snyk.io/org/example-org",
+    "group": null,
+    "created": "2019-03-05T13:42:57.400Z"
+  },
+  "newIssues": [
+    {
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-2414084",
+      "issueType": "vuln",
+      "pkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "pkgVersions": [
+        "9.0.31"
+      ],
+      "priorityScore": 564,
+      "priority": {
+        "score": 564,
+        "factors": [
+          {
+            "name": "isFixable",
+            "description": "Has a fix available"
+          },
+          {
+            "name": "cvssScore",
+            "description": "CVSS 7"
+          }
+        ]
+      },
+      "issueData": {
+        "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-2414084",
+        "title": "Privilege Escalation",
+        "severity": "high",
+        "url": "https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-2414084",
+        "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to Privilege Escalation via a `time of check, time of use` vulnerability that allows a local attacker to perform actions with the privileges of the user that the Tomcat process is using. \r\nThis issue is only exploitable when Tomcat is configured to persist sessions using the FileStore.\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 8.5.75, 9.0.58, 10.0.16, 10.1.0-M10 or higher.\n## References\n- [Apache Pony Mail](https://lists.apache.org/thread/l8x62p3k19yfcb208jo4zrb83k5mfwg9)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/bb33048e3f9b4f2b70e4da2e6c4e34ca89023b1b)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=2047417)\n",
+        "identifiers": {
+          "CVE": [
+            "CVE-2022-23181"
+          ],
+          "CWE": [
+            "CWE-264"
+          ]
+        },
+        "credit": [
+          "Trung Pham"
+        ],
+        "exploitMaturity": "no-known-exploit",
+        "semver": {
+          "vulnerable": [
+            "[8.5.55,8.5.75)",
+            "[9.0.0, 9.0.58)",
+            "[10.0.0-M1, 10.0.16)",
+            "[10.1.0-M1, 10.1.0-M10)"
+          ]
+        },
+        "publicationTime": "2022-01-28T14:50:31Z",
+        "disclosureTime": "2022-01-26T00:00:00Z",
+        "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "cvssScore": 7,
+        "functions": [],
+        "language": "java",
+        "patches": [],
+        "nearestFixedInVersion": "",
+        "isMaliciousPackage": false
+      },
+      "isPatched": false,
+      "isIgnored": false,
+      "fixInfo": {
+        "isUpgradable": true,
+        "isPinnable": false,
+        "isPatchable": false,
+        "isFixable": true,
+        "isPartiallyFixable": true,
+        "nearestFixedInVersion": "",
+        "fixedIn": [
+          "8.5.75",
+          "9.0.58",
+          "10.0.16",
+          "10.1.0-M10"
+        ]
+      }
+    }
+  ]
+}

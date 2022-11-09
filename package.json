@@ -1,0 +1,27 @@
+{
+  "name": "snyk-slack-notifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/main.js",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "3.12.1",
+    "axios": "0.27.2",
+    "express": "4.18.1"
+  },
+  "devDependencies": {
+    "husky": "8.0.1",
+    "jest": "28.1.3",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
