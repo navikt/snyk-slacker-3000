@@ -1,0 +1,8 @@
+[
+	{
+		"snykOrg": "bogus-org",
+      "slackChannelId": "C1234",
+      "severity": ["critical", "high"],
+     "issueType": ["vuln", "license"]
+   }
+]
