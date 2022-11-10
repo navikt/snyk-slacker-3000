@@ -11,7 +11,7 @@ const SNYK_API_BASE_URL =
 const axiosClient = axios.create({
   baseURL: SNYK_API_BASE_URL,
   timeout: 5000,
-  headers: { "User-Agent": "snyk-slack-notifier" },
+  headers: { "User-Agent": "snyk-slacker-3000" },
 });
 
 const snykGet = (url) =>

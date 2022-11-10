@@ -1,7 +1,7 @@
 apiVersion: nais.io/v1alpha1
 kind: Application
 metadata:
-  name: snyk-slack-notifier
+  name: snyk-slacker-3000
   namespace: security-champion-admin
   labels:
     team: security-champion-admin

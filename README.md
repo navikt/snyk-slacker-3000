@@ -1,4 +1,4 @@
-# Snyk Slack Notifier
+# Snyk Slacker 3000
 
 Custom Snyk webhook integration to support filtering of alerts on severity.
 
