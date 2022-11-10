@@ -1,5 +1,8 @@
 # Snyk Slacker 3000
 
+> **Warning**
+> This is basically a copy of an internal app that was made in a hurry, but we're opening it up so that others can take inspiration from it. Use at your own discretion! The build logic assumes that the app will be run as a a container on nais. Some manual setup in Snyk and Slack is required, but not described in detail here.
+
 Custom Snyk webhook integration to support filtering of alerts on severity.
 
 ## How to use for your team's Snyk organization
